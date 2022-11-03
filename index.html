@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./style.css" />
+    <title>Dojo Weather</title>
+</head>
+<body>
+    <nav>
+        <div class="nav-spread">
+            <h1>DojoWeather</h1>
+            <div class="cities">
+                <a onclick="alertNav()">Burbank</a>
+                <a onclick="alertNav()">Chicago</a>
+                <a onclick="alertNav()">Dallas</a>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <div class="main-header">
+            <h2>San Jose</h2>
+            <div class="main-header-right">
+                <p>show temperature in</p>
+                <select onChange="convert(this)">
+                    <option>C</option>
+                    <option>F</option>
+                </select>
+            </div>
+        </div>
+        <div class="main-content">
+            <div class="weather-boxes">
+                <h3>Today</h3>
+                <div id="circles">Rain</div>
+                <p>some rain</p>
+                <div id="main-temps">
+                    <p id="temp1" class="high">24</p>
+                    <p id="temp2" class="low">18</p>
+                </div>
+            </div>
+            <div class="weather-boxes">
+                <h3>Tomorrow</h3>
+                <div id="circles">Sun</div>
+                <p>some sun</p>
+                <div id="main-temps">
+                    <p id="temp3" class="high">27</p>
+                    <p id="temp4" class="low">19</p>
+                </div>
+            </div>
+            <div class="weather-boxes">
+                <h3>Friday</h3>
+                <div id="circles">Clouds</div>
+                <p>some clouds</p>
+                <div id="main-temps">
+                    <p id="temp5" class="high">21</p>
+                    <p id="temp6" class="low">16</p>
+                </div>
+            </div>
+            <div class="weather-boxes">
+                <h3>Saturday</h3>
+                <div id="circles">Sun</div>
+                <p>some sun</p>
+                <div id="main-temps">
+                    <p id="temp7" class="high">26</p>
+                    <p id="temp8" class="low">21</p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <div class="cookie">
+        <div class="cookie-content">
+            <h3>
+                Stop! Cookie Time
+            </h3>
+            <p>
+                We use cookies (sadly not the edible ones) to personalize content and ads to provide the social media features and to analyse our traffic.
+                <a>Read More...</a>
+            </p>
+        </div>
+        <button onclick="cookieMessage()" id="cookie-button">I Accept</button>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
